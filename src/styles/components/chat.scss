@@ -1,0 +1,141 @@
+@import "../base/all.scss";
+
+.Chat-wrapper {
+	padding-bottom: 150px;	
+}
+
+.Chat {
+	width: 50%;
+
+	.header {
+		background-color: $logan;
+		color: white;
+		padding: 10px;
+		display: flex;
+		align-items: center;
+	}
+
+	.contacts-container {
+		border: 1px solid $chalky;
+		padding: 0;
+
+		.contact-wrap {
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
+			margin-bottom: 3px;
+			padding:3px;
+			border-bottom: 1px solid lighten($chalky, 10%);
+
+			.contact-name {
+				padding-left: 5px;
+			}
+
+			&.active {
+				background-color: lighten($chalky, 20%);
+				border-right: 3px solid $chalky;
+			}
+		}
+	}
+	.profile-bar {
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+	}
+	.profile-name {
+		margin-right: 6px;
+	}
+
+	.messages {
+		background-color: $whisper;
+		border: 1px solid $chalky;
+		border-left: 0;
+		padding: 0;
+
+		.messages-wrap {
+			padding: 0 0 0 10px;
+			overflow-y: auto;
+			height: 88%;
+		}
+
+		.message-input {
+			display: flex;
+			align-items: center;
+			border-top: 1px solid $chalky;
+			padding-top:5px;
+			.text-input {
+				flex-grow: 1;
+
+				textarea {
+					width: 100%;
+					border: none;
+					padding: 0 3px;
+				}	
+			}
+
+			button {
+				border-radius: 50%;
+				height: 45px;
+				width: 45px;
+				border: none;
+				background-color: $logan;
+				color: $whisper;
+				margin: 0 5px;
+				.glyphicon {
+					margin-right: 3px;
+				}
+			}
+
+			
+		}
+
+		.message-container {
+			margin: 10px 0;	
+			display: flex;
+			justify-content: flex-start;
+
+				.message-body {
+					padding-left: 5px;	
+
+					.message-text {
+						background-color: lighten($chalky, 15%);
+						padding: 10px 15px 1px;
+						border-radius: 10px;
+					}
+
+					.message-author {
+						color: lighten($waterloo, 20%);
+						font-size: smaller;
+						margin: 2px 0 0 9px;
+						font-style: italic;
+					}
+				}
+
+			&.me {
+				justify-content: flex-end;
+				padding-right: 10px;
+				.message-text {
+					background-color: $logan;
+					color: $whisper;
+				}
+				.message-author, .profile-image {
+					display:  none;
+				}
+				
+			}	
+		}
+	}
+
+	.noDots {
+		display:block;
+		height:12px;
+	}
+}
+
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+  height: 100%;
+}

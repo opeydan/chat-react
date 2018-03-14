@@ -1,0 +1,17 @@
+.Login {
+	form {
+	    margin: 0 auto;
+	    max-width: 320px;
+	}
+	.form-control {
+		border-radius: 0;
+		border-color: $waterloo;
+		color: $mulledwine;
+	}
+	.btn-lg {
+		border-radius: 0;
+		background-color: $logan;
+		color: $whisper;
+		border-color: $waterloo;
+	}
+}

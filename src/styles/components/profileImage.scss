@@ -1,0 +1,23 @@
+@import "../base/all.scss";
+.profile-image {
+	display:block;
+	padding:6px;
+	width:35px;
+	height:35px;
+	border-radius: 50%;
+	background-color: $whisper;
+		.glyphicon {
+			color:$logan;
+			font-size: 23px;
+		}
+
+}
+
+.message-container, .contact-wrap {
+	.profile-image {
+		background-color: $logan;
+		.glyphicon {
+			color:$whisper;		
+		}
+	}
+}

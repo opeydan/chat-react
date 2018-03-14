@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito");
+@import url("https://fonts.googleapis.com/css?family=Nunito");
+@import url("https://fonts.googleapis.com/css?family=Nunito");
+@import url("https://fonts.googleapis.com/css?family=Nunito");
+.Chat-wrapper {
+  padding-bottom: 150px; }
+
+.Chat {
+  width: 50%; }
+  .Chat .header {
+    background-color: #9F9FC7;
+    color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center; }
+  .Chat .contacts-container {
+    border: 1px solid #EED395;
+    padding: 0; }
+    .Chat .contacts-container .contact-wrap {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      margin-bottom: 3px;
+      padding: 3px;
+      border-bottom: 1px solid #f5e5c1; }
+      .Chat .contacts-container .contact-wrap .contact-name {
+        padding-left: 5px; }
+      .Chat .contacts-container .contact-wrap.active {
+        background-color: #fcf7ed;
+        border-right: 3px solid #EED395; }
+  .Chat .profile-bar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; }
+  .Chat .profile-name {
+    margin-right: 6px; }
+  .Chat .messages {
+    background-color: #FDFDFE;
+    border: 1px solid #EED395;
+    border-left: 0;
+    padding: 0; }
+    .Chat .messages .messages-wrap {
+      padding: 0 0 0 10px;
+      overflow-y: auto;
+      height: 88%; }
+    .Chat .messages .message-input {
+      display: flex;
+      align-items: center;
+      border-top: 1px solid #EED395;
+      padding-top: 5px; }
+      .Chat .messages .message-input .text-input {
+        flex-grow: 1; }
+        .Chat .messages .message-input .text-input textarea {
+          width: 100%;
+          border: none;
+          padding: 0 3px; }
+      .Chat .messages .message-input button {
+        border-radius: 50%;
+        height: 45px;
+        width: 45px;
+        border: none;
+        background-color: #9F9FC7;
+        color: #FDFDFE;
+        margin: 0 5px; }
+        .Chat .messages .message-input button .glyphicon {
+          margin-right: 3px; }
+    .Chat .messages .message-container {
+      margin: 10px 0;
+      display: flex;
+      justify-content: flex-start; }
+      .Chat .messages .message-container .message-body {
+        padding-left: 5px; }
+        .Chat .messages .message-container .message-body .message-text {
+          background-color: #f9eed7;
+          padding: 10px 15px 1px;
+          border-radius: 10px; }
+        .Chat .messages .message-container .message-body .message-author {
+          color: #babac5;
+          font-size: smaller;
+          margin: 2px 0 0 9px;
+          font-style: italic; }
+      .Chat .messages .message-container.me {
+        justify-content: flex-end;
+        padding-right: 10px; }
+        .Chat .messages .message-container.me .message-text {
+          background-color: #9F9FC7;
+          color: #FDFDFE; }
+        .Chat .messages .message-container.me .message-author, .Chat .messages .message-container.me .profile-image {
+          display: none; }
+  .Chat .noDots {
+    display: block;
+    height: 12px; }
+
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%; }
+
+.Home .logo {
+  margin-left: -33px;
+  color: #9F9FC7; }
+  .Home .logo .glyphicon {
+    margin-right: -23px;
+    font-size: 40px; }
+
+.Home .lander {
+  padding: 30px 0;
+  text-align: center; }
+  .Home .lander h1 {
+    font-weight: 600; }
+  .Home .lander p {
+    color: #4A4862; }
+
+html, body, .App, .container, .root {
+  height: 100%; }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: #FDFDFE;
+  color: #4A4862;
+  overflow: hidden; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Nunito", sans-serif; }
+
+.Login form {
+  margin: 0 auto;
+  max-width: 320px; }
+
+.Login .form-control {
+  border-radius: 0;
+  border-color: #838297;
+  color: #4A4862; }
+
+.Login .btn-lg {
+  border-radius: 0;
+  background-color: #9F9FC7;
+  color: #FDFDFE;
+  border-color: #838297; }
+
+.NotFound {
+  padding-top: 100px;
+  text-align: center; }
+
+.logo .glyphicon {
+  margin-right: -13px;
+  margin-top: -4px; }
+
+.profile-image {
+  display: block;
+  padding: 6px;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #FDFDFE; }
+  .profile-image .glyphicon {
+    color: #9F9FC7;
+    font-size: 23px; }
+
+.message-container .profile-image, .contact-wrap .profile-image {
+  background-color: #9F9FC7; }
+  .message-container .profile-image .glyphicon, .contact-wrap .profile-image .glyphicon {
+    color: #FDFDFE; }
+
+.dots {
+  font-size: 40px;
+  color: #EED395;
+  line-height: 1px;
+  padding-bottom: 8px;
+  padding-left: 10px; }
+  .dots span {
+    font-size: 50px;
+    animation-name: blink;
+    animation-duration: 1.4s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both; }
+  .dots span:nth-child(2) {
+    animation-delay: .2s; }
+  .dots span:nth-child(3) {
+    animation-delay: .4s; }
+
+@keyframes blink {
+  0% {
+    opacity: .2; }
+  20% {
+    opacity: 1; }
+  100% {
+    opacity: .2; } }

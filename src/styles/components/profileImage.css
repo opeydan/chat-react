@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito");
+.profile-image {
+  display: block;
+  padding: 6px;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #FDFDFE; }
+  .profile-image .glyphicon {
+    color: #9F9FC7;
+    font-size: 23px; }
+
+.message-container .profile-image, .contact-wrap .profile-image {
+  background-color: #9F9FC7; }
+  .message-container .profile-image .glyphicon, .contact-wrap .profile-image .glyphicon {
+    color: #FDFDFE; }
